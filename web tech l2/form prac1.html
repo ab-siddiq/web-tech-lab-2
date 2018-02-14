@@ -1,203 +1,197 @@
 <!DOCTYPE html>
-<html >
+<html lang="en-US">
 	<head>
-		<title>form</title>
+		<title>Employee Information Manager</title>
 	</head>
 	<body>
-		<table >
-			<tr>
-				<td>Employee Name</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="text" name="text1" placeholder="Md. Abu Bakkar"/>
-				</td>
-				<td>
-					<input type="text" name="text2" placeholder="Siddiq" />
+		<table border="1px" align="center" width="480px">
+			<tr align="center">
+				<td colspan="3">
+					<a href="employee.html" target="">
+						<h1>Employee Information </h1>
+						<h1>Manager</h1>				
+					</a>
 				</td>
 			</tr>
-			<tr>
-				<td><sup>First Name</sup></td>
-				<td><sup>Last Name</sup></td>
+			<tr align="center">
+				<td>View Feedback</td>
+				<td><a href="input.html" target="">Input Feedback</a></td>
+				<td><a href="contact.html" target="">Contact Us</a></td>
 			</tr>
-			
-			<tr>
-				<td>Employee Hire Date</td>
-			</tr>
-			<tr>
-				<td>
-					<select name="day" >
-					</select>
+			<tr >
 				
-					<select name="month" >
-					</select>
-				
-					<select name="year" >
-					</select>
-					<img src="calendar.png" alt="calendar icon" height="20" width="20" />
-				</td>
-			</tr>
-			<tr>
-				<td>Employee Title</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="text" name="emp title" placeholder="Teacher" />
-				</td>
-			</tr>
-			
-			<tr>
-				<td>Employee Department</td>
-			</tr>
-			<tr>
-				<td>
-					<select name="department">
-						<option value="opt1">Marketing</option>
-						<option value="opt2">Sales</option>
-						<option value="opt3">Networking</option>
-					</select>
-				</td>	
-			</tr>
-			
-			<tr>
-				<td>Performance Evaluation</td>
-			</tr>
-			<tr>
-				<td>
-					<table border="1px">
-						<tr align="center">
-							<td></td>
-							<td width="90">Very Good</td>
-							<td width="90">Good</td>
-							<td width="90">Fair</td>
-							<td width="90">Poor</td>
-							<td width="90">Very Poor</td>
-						</tr>
-						<tr align="center">
-							<td align="right" >Attendance</td>
-							<td><input type="radio" name="rank" /></td>
-							<td><input type="radio" name="rank" /></td>
-							<td><input type="radio" name="rank" /></td>
-							<td><input type="radio" name="rank" /></td>
-							<td><input type="radio" name="rank" /></td>
-							
-						</tr>
-						<tr align="center">
-							<td align="right">Quality of Work</td>
-							<td><input type="radio" name="rank2" /></td>
-							<td><input type="radio" name="rank2" /></td>
-							<td><input type="radio" name="rank2" /></td>
-							<td><input type="radio" name="rank2" /></td>
-							<td><input type="radio" name="rank2" /></td>
-						</tr>
-						<tr align="center">
-							<td align="right">Quantity of work</td>
-							<td><input type="radio" name="rank2" /></td>
-							<td><input type="radio" name="rank3" /></td>
-							<td><input type="radio" name="rank3" /></td>
-							<td><input type="radio" name="rank3" /></td>
-							<td><input type="radio" name="rank3" /></td>
-						</tr>
-						<tr align="center">
-							<td align="right">Attitude</td>
-							<td><input type="radio" name="rank4" /></td>
-							<td><input type="radio" name="rank4" /></td>
-							<td><input type="radio" name="rank4" /></td>
-							<td><input type="radio" name="rank4" /></td>
-							<td><input type="radio" name="rank4" /></td>
-						</tr>
-						
-						<tr align="center">
-							<td align="right">Dependability</td>
-							<td><input type="radio" name="rank5" /></td>
-							<td><input type="radio" name="rank5" /></td>
-							<td><input type="radio" name="rank5" /></td>
-							<td><input type="radio" name="rank5" /></td>
-							<td><input type="radio" name="rank5" /></td>
-						</tr>
-						<tr align="center">
-							<td align="right">Work ethic</td>
-							<td><input type="radio" name="rank6" /></td>
-							<td><input type="radio" name="rank6" /></td>
-							<td><input type="radio" name="rank6" /></td>
-							<td><input type="radio" name="rank6" /></td>
-							<td><input type="radio" name="rank6" /></td>
-						</tr>
-						
-						
-					</table>
-				</td>
-			
-			</tr>
-			<tr>
-				<td>Overall, i would rank this employee's performance as:</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="radio" name="rank7" />Very Good
-					<input type="radio" name="rank7" />Good
-					<input type="radio" name="rank7" />Fair
-					<input type="radio" name="rank7" />Poor
-					<input type="radio" name="rank7" />Very Poor
-				</td>
-						
-			</tr>
-			
-			<tr>
-				<td>Please go into more detail on why you chose this ranking</td>
-			</tr>
-			
-			<tr>
-				<td>
-					<textarea name="message" style="width:450px; height:90px">
-					
-					</textarea>
-				</td>
-			</tr>
-		
-			<tr>
-				<td>
-					<table border="1px">
+				<td colspan="3" align="center">
+					<table>
 						<tr>
-							<td>Employee Name</td>
-						</tr>
-						<tr>
-							<td>
-								<input type="text" name="text1" placeholder="Md. Abu Bakkar"/>
+							<td colspan="3" style="margin-left:10px">
+								<br/>
+								<label>Employee's Name</label><br/>
+								<input type="text" name="firstName" id="firstName" style="width: 200px; "/>
+								<input type="text" name="lastName" id="lastName" style="width: 200px; margin-left:15px"/><br/>
+								<label><small>First Name</small></label>			
+								<label style="margin-left:162px"><small>Last Name</small><label>
+								<br/>
+								<br/>
+								
+								<label >Employee's Hire Date</label><br/>
+								<select name="day" height="20" >
+									<option value="days">1</option>
+									<option value="days">2</option>
+									<option value="days">3</option>
+									<option value="days">4</option>
+									<option value="days">5</option>
+									<option value="days">6</option>
+									<option value="days">7</option>
+									<option value="days">8</option>
+								</select>
+								<select name="month" >
+									<option value="months">January</option>
+									<option value="months">February</option>
+									<option value="months">March</option>
+									<option value="months">April</option>
+									<option value="months">May</option>
+									<option value="months">June</option>
+									<option value="months">July</option>
+									<option value="months">August</option>
+								</select>
+								<select name="year" >
+									<option value="years">2010</option>
+									<option value="years">2011</option>
+									<option value="years">2012</option>
+									<option value="years">2013</option>
+									<option value="years">2014</option>
+									<option value="years">2015</option>
+									<option value="years">2016</option>
+									<option value="years">2017</option>
+								</select>
+								<img src="calendar.png" height="20" width="20" />
+								<br/>
+								<br/>
+								
+								<label>Employee's Title</label><br/>
+								<input type="text" name="title" style="width:425px" />
+								<br/>
+								<br/>
+								
+								<label>Employee's Departmernt</label><br/>
+								<select name="departmnet">
+									<option value="opt1">Marketing</option>
+									<option value="opt2">Sales</option>
+									<option value="opt3">Networking</option>
+								</select>
+								<br/>
+								<br/>
+								
+								<label>Performance Evaluation</label><br/>
+								<table border="1px" width="425px">
+									<tr>
+										<td></td>
+										<td>Very Good</td>
+										<td>Good</td>
+										<td>Fair</td>
+										<td>Poor</td>
+										<td>Very Poor</td>
+									</tr>
+									
+									<tr align="center">
+										<td>Attendance</td>
+										<td><input type="radio" name="rank"/></td>
+										<td><input type="radio" name="rank"/></td>
+										<td><input type="radio" name="rank"/></td>
+										<td><input type="radio" name="rank"/></td>
+										<td><input type="radio" name="rank"/></td>
+									</tr>
+									
+									<tr align="center">
+										<td>Quality of work</td>
+										<td><input type="radio" name="rank1"/></td>
+										<td><input type="radio" name="rank1"/></td>
+										<td><input type="radio" name="rank1"/></td>
+										<td><input type="radio" name="rank1"/></td>
+										<td><input type="radio" name="rank1"/></td>
+									</tr>
+									
+									<tr align="center">
+										<td>Quantity of work</td>
+										<td><input type="radio" name="rank2"/></td>
+										<td><input type="radio" name="rank2"/></td>
+										<td><input type="radio" name="rank2"/></td>
+										<td><input type="radio" name="rank2"/></td>
+										<td><input type="radio" name="rank2"/></td>
+									</tr>
+									
+									<tr align="center">
+										<td>Attitude</td>
+										<td><input type="radio" name="rank3"/></td>
+										<td><input type="radio" name="rank3"/></td>
+										<td><input type="radio" name="rank3"/></td>
+										<td><input type="radio" name="rank3"/></td>
+										<td><input type="radio" name="rank3"/></td>
+									</tr>
+									
+									<tr align="center">
+										<td>Depandability</td>
+										<td><input type="radio" name="rank4"/></td>
+										<td><input type="radio" name="rank4"/></td>
+										<td><input type="radio" name="rank4"/></td>
+										<td><input type="radio" name="rank4"/></td>
+										<td><input type="radio" name="rank4"/></td>
+									</tr>
+									
+									<tr align="center">
+										<td>Work ethic</td>
+										<td><input type="radio" name="rank5"/></td>
+										<td><input type="radio" name="rank5"/></td>
+										<td><input type="radio" name="rank5"/></td>
+										<td><input type="radio" name="rank5"/></td>
+										<td><input type="radio" name="rank5"/></td>
+									</tr>
+								
+								</table>
+								<br/>
+								
+								<label>Overall, i would rank this employee's performance as:</label><br/>
+								<input type="radio" name="rank" value="very good"/>Very Good
+								
+								<input type="radio" name="rank" value="good"/>Good
+								
+								<input type="radio" name="rank" value="fair"/>Fair
+								
+								<input type="radio" name="rank" value="poor"/>Poor
+								
+								<input type="radio" name="rank" value="very poor"/>Very Poor
+								<br/>
+								<br/>
+								
+								<label>Please go into more detail on why you choose this rank.<label><br/>
+								<textarea name="message" style="width:425px; height:90px"></textarea> 
+								<br/>
+								
+								<label>Supervisor's Name</label><br/>
+								<input type="text" name="firstName" id="firstName" style="width: 200px; "/>
+								<input type="text" name="lastName" id="lastName" style="width: 200px; margin-left:15px"/><br/>
+								<label><small>First Name</small></label>			
+								<label style="margin-left:162px"><small>Last Name</small><label>
+								<br/>
+								<br/>
+								
+								<label>Supervisor's Signature</label><br/>
+								<textarea name="message" style="width:425px; height:90px">
+								 ----------------------------------
+								</textarea> 
+								<br/>
+								
+								<label><sup>Use your mouse or finger to draw your finger above</sup></label>
+								<label style="margin-left:115px"><a href="input.html"><sup>[clear]</sup></a></label>
+								<br/>
 							</td>
-							<td>
-								<input type="text" name="text2" placeholder="Siddiq" />
-							</td>
-						</tr>
-						<tr>
-							<td><sup>First Name</sup></td>
-							<td><sup>Last Name</sup></td>
-						</tr>
-						
-						<tr>
-							<td>Employee Hire Date</td>
-						</tr>
-					</table>
-				</td>
+						</td>
+					</tr>
+				</table>	
 			</tr>
-				<tr>
-				<td>Supervisor's Signature</td>
+			<tr align="center">
+				<td colspan="3" align="center"><h1>Footer</h1></td>
 			</tr>
-			
-			<tr>
-				<td>
-					<textarea name="message" style="width:450px; height:90px">
-					
-					</textarea>
-				</td>
-			</tr>
-			<tr>
-				<td><sup>Use your mouse or finger to your draw signature above</sup></td>
-				<td><sup><a href="form prac1.html">[clear]</a></sup></td>
-			</tr>
-			
 		</table>
-		
-		
 	</body>
 </html>
